@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 学习版资源 - @ViewBag.Title</title>
+    <link href="~/Content/TopCon.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.7.0.min.js"></script>
+    <script src="~/Scripts/jquery-3.7.0.js"></script>
+</head>
+<body>
+    <script>
+        var appState = {
+            isLoggedIn:@Html.Raw(Json.Encode(ViewBag.userViewModel.IsLogin)),
+            user:@Html.Raw(Json.Encode(ViewBag.userViewModel.user))
+
+        }
+    </script>
+    <script src="~/Scripts/Layout.js"></script>
+    <div class="setTop">
+        <div class="container">
+            <div class="topShow">
+
+                <div class="toplogo">
+
+                    <img src="~/img/MyLogo.png" alt="none" />
+                </div>
+
+
+                <nav class="TopBar">
+                    <ul>
+
+                        @foreach (var item in ViewBag.navList)
+                        {
+                            <div>
+                            <li>
+                                <a href="@Url.Action(item.RouterSrc, item.Controller)">@item.Name</a>
+                            </li>
+                </div>
+
+            }
+                        </ul>
+                        </nav>
+
+                        <div class="topuserpic">
+                            <img src="~/img/cks.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="toplogin">
+                                <a href="@Url.Action("LoginIndex","Login")">登录</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="main">
+                    @RenderSection("Scripts", required: false)
+
+                    @RenderSection("Styles", required: false)
+                    @RenderBody()
+
+                </div>
+
+                <footer>
+                    <!-- 底部内容 -->
+                </footer>
+
+
+
+
+            </body>
+</html>

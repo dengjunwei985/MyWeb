@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "ForgetIndex";
+}
+
+@section Styles {
+    <link href="~/Content/Forget.css" rel="stylesheet" />
+}
+
+
+<div class="forgot-password-box">
+    <h2>忘记密码</h2>
+    <form action="#" id="forgot-password-form">
+        <div class="user-box">
+            <input type="email" name="email" required>
+            <label>邮箱</label>
+        </div>
+        <div class="user-box" id="verification-code-box">
+            <input type="text" name="verification-code" required style="width: 75%;">
+            <label>验证码</label>
+            <button type="button" id="send-verification-code" style="margin-left: 10px; width:25%">发送</button>
+        </div>
+
+        <button type="submit">确认</button>
+        <div class="links">
+            <a href="@Url.Action("LoginIndex","Login")">返回登录</a>
+        </div>
+    </form>
+</div>

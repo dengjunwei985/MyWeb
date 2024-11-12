@@ -1,0 +1,113 @@
+﻿body {
+    margin: 0;
+    padding:0 ;
+}
+.back-contain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-contain .base-box{
+    width:1400px;
+}
+
+.base-title{
+    font-size:25px;
+    font-family: "楷体";
+
+}
+
+.Index-container{
+    width: 100%;
+    
+}
+
+
+.slider-button {
+    position: absolute;
+    top: calc(50% - 20px); /* 垂直居中 */
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+    width: 70px;
+    height:40px;
+    font-size:30px;
+
+}
+
+.slider-left {
+    left: 10px;
+}
+
+.slider-right {
+    right: 10px;
+}
+
+
+.img-container {
+    width: 1400px;
+    height: 400px;
+    background-color: aqua;
+    position:relative;
+}
+.back_img {
+    background: url("../img/bg_banner.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    /* 以下是对组件内的布局 */
+    display: flex; /* 使用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.history-contain{
+    margin-top: 20px;
+}
+
+
+.music-title-contain{
+    margin-top: 20px;
+}
+.music-title-contain .music-text{
+    width:1400px;
+
+}
+.music-contain {
+    width:100%;
+
+    display: flex; /* 使用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+    .music-contain .music-Box {
+        background-color:aquamarine;
+        width: 1400px;
+        height: 400px;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+    .music-Box .music-itemBox{
+        margin: 7px 0px 20px 0px;
+        width: 30% ;
+        background-color: aliceblue;
+    }
+
+.game-contain{
+
+}
+
+.vidao-contain{
+
+}
+
+.goods-contain{
+
+}
+
+

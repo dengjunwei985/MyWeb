@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "ForgetSuccess";
+}
+@section Styles {
+    <link href="~/Content/Forget.css" rel="stylesheet" />
+}
+
+
+<div class="forgot-password-box">
+    <h2>忘记密码</h2>
+    <form action="#" id="forgot-password-form">
+        <div class="user-box" id="reset-password-box">
+            <input type="password" name="new-password" required>
+            <label>新密码</label>
+        </div>
+        <div class="user-box" id="confirm-password-box">
+            <input type="password" name="confirm-password" required>
+            <label>确认密码</label>
+        </div>
+        <button type="submit" id="reset-password-btn">重置密码</button>
+        <div class="links">
+            <a href="@Url.Action("LoginIndex","Login")">返回登录</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,110 @@
+﻿body{
+    margin: 0;
+    padding: 0;
+}
+.setTop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* 确保导航栏始终覆盖在其他内容之上 */
+}
+.container {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.topShow {
+    width: 1400px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.toplogo {
+    width: 10%;
+}
+
+    .toplogo img {
+        object-fit: cover;
+        max-width: 100%;
+        height: 60px;
+    }
+
+.TopBar {
+    width: 70%;
+    height: auto;
+}
+
+    .TopBar ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+        .TopBar ul div {
+            height: 60px;
+            flex: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+        }
+
+            .TopBar ul div:hover {
+                background-color: black;
+                cursor: pointer;
+            }
+
+        .TopBar ul li {
+            list-style: none;
+        }
+
+.TopBar ul li a {
+                text-decoration: none;
+                font-size: 25px;
+                color: aliceblue;
+                font-family: '宋体', serif;
+}
+
+.topuserpic {
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+    .topuserpic img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    .topuserpic:hover {
+        cursor: pointer;
+    }
+
+.toplogin {
+    margin-left: 10px;
+    width: auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.toplogin a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-family: '宋体', serif;
+}
+
+    .toplogin a:hover {
+        cursor: pointer;
+    }
+
+.main{
+    margin-top:60px;
+}
